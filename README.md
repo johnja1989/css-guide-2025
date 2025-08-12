@@ -6,7 +6,7 @@ Una guía interactiva y completa para aprender CSS desde cero hasta un nivel ava
 
 ## 🚀 Demo en Vivo
 
-Puedes ver la guía en acción aquí: [Demo Live](https://github.com/johnja1989/css-guide-2025)
+Puedes ver la guía en acción aquí: [Demo Live](https://tu-usuario.github.io/css-guide-2025)
 
 ## 📋 ¿Qué Incluye?
 
@@ -202,17 +202,3 @@ open index.html
 ```
 
 **¡Happy coding! 🎉**
-
-# Editar README.md y agregar estas líneas al final:
-
-echo "
-
-## 🔥 Últimas Actualizaciones
-
-- ✨ Mejorada la navegación principal
-- 🎯 Agregados más ejemplos interactivos
-- 📱 Optimización para dispositivos móviles
-- 🚀 Performance mejorada
-
----
-**Última actualización**: $(date)" >> README.md
