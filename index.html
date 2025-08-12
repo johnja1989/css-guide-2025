@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía Completa CSS 2025 - Actualizada con Nuevas Funciones</title>
+    <title>Guía Completa CSS 2025 - De Básico a Avanzado</title>
     <style>
         /* Variables CSS para consistencia */
         :root {
@@ -58,7 +57,7 @@
         .nav {
             background: white;
             padding: 1rem 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -97,7 +96,7 @@
             background: white;
             padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             height: fit-content;
             position: sticky;
             top: 100px;
@@ -131,7 +130,7 @@
             background: white;
             padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         /* Secciones */
@@ -239,16 +238,16 @@
             .main-content {
                 grid-template-columns: 1fr;
             }
-
+            
             .sidebar {
                 position: static;
             }
-
+            
             .nav-list {
                 flex-direction: column;
                 align-items: center;
             }
-
+            
             .header h1 {
                 font-size: 2rem;
             }
@@ -264,7 +263,7 @@
             padding: 1rem;
             border-radius: 50px;
             text-decoration: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             font-weight: bold;
             z-index: 1000;
         }
@@ -275,7 +274,6 @@
         }
     </style>
 </head>
-
 <body>
     <header class="header">
         <div class="container">
@@ -318,37 +316,34 @@
             <main class="content">
                 <section id="introduccion" class="section">
                     <h2>Introducción a CSS</h2>
-
+                    
                     <div id="que-es-css">
                         <h3>¿Qué es CSS?</h3>
-                        <p>CSS (Cascading Style Sheets) es el lenguaje que usamos para describir cómo se ven nuestras
-                            páginas web. Si HTML es el esqueleto de una página, CSS es lo que la viste y la hace
-                            hermosa.</p>
-
+                        <p>CSS (Cascading Style Sheets) es el lenguaje que usamos para describir cómo se ven nuestras páginas web. Si HTML es el esqueleto de una página, CSS es lo que la viste y la hace hermosa.</p>
+                        
                         <div class="tip">
-                            Imagina que HTML son los huesos de una casa y CSS es la pintura, los muebles y la
-                            decoración. Sin CSS, todas las páginas web se verían igual de aburridas.
+                            Imagina que HTML son los huesos de una casa y CSS es la pintura, los muebles y la decoración. Sin CSS, todas las páginas web se verían igual de aburridas.
                         </div>
                     </div>
 
                     <div id="sintaxis">
                         <h3>Sintaxis Básica</h3>
                         <p>CSS sigue una estructura muy simple:</p>
-
+                        
                         <div class="code-block">
-                            selector {
-                            propiedad: valor;
-                            otra-propiedad: otro-valor;
-                            }</div>
-
+selector {
+    propiedad: valor;
+    otra-propiedad: otro-valor;
+}</div>
+                        
                         <div class="demo-box">
                             <div class="demo-header">Ejemplo práctico</div>
                             <div class="demo-content">
                                 <div class="code-block">
-                                    h1 {
-                                    color: blue;
-                                    font-size: 24px;
-                                    }
+h1 {
+    color: blue;
+    font-size: 24px;
+}
                                 </div>
                                 <p>Esto hace que todos los h1 sean azules y de 24 píxeles.</p>
                             </div>
@@ -356,16 +351,15 @@
 
                         <div class="exercise">
                             <h4>Ejercicio 1: Tu primer CSS</h4>
-                            <p>Crea una regla CSS que haga que todos los párrafos (<code class="code-inline">p</code>)
-                                tengan color rojo y tamaño de fuente de 16px.</p>
-
+                            <p>Crea una regla CSS que haga que todos los párrafos (<code class="code-inline">p</code>) tengan color rojo y tamaño de fuente de 16px.</p>
+                            
                             <details class="exercise-solution">
                                 <summary>Ver solución</summary>
                                 <div class="code-block">
-                                    p {
-                                    color: red;
-                                    font-size: 16px;
-                                    }
+p {
+    color: red;
+    font-size: 16px;
+}
                                 </div>
                             </details>
                         </div>
@@ -374,31 +368,30 @@
 
                 <section id="basico" class="section">
                     <h2>Fundamentos Básicos</h2>
-
+                    
                     <div id="selectores">
                         <h3>Selectores</h3>
                         <p>Los selectores son la forma de "apuntar" a los elementos HTML que queremos estilizar:</p>
-
+                        
                         <div class="code-block">
-                            /* Selector de elemento */
-                            h1 { color: blue; }
+/* Selector de elemento */
+h1 { color: blue; }
 
-                            /* Selector de clase */
-                            .mi-clase { background: yellow; }
+/* Selector de clase */
+.mi-clase { background: yellow; }
 
-                            /* Selector de ID */
-                            #mi-id { border: 2px solid red; }
+/* Selector de ID */
+#mi-id { border: 2px solid red; }
 
-                            /* Selector descendente */
-                            div p { margin: 10px; }
+/* Selector descendente */
+div p { margin: 10px; }
                         </div>
-
+                        
                         <div class="demo-box">
                             <div class="demo-header">Ejemplo en vivo</div>
                             <div class="demo-content">
                                 <h4 style="color: blue;">Título con selector de elemento</h4>
-                                <p class="ejemplo-clase" style="background: yellow; padding: 10px;">Párrafo con clase
-                                </p>
+                                <p class="ejemplo-clase" style="background: yellow; padding: 10px;">Párrafo con clase</p>
                                 <p id="ejemplo-id" style="border: 2px solid red; padding: 5px;">Párrafo con ID</p>
                             </div>
                         </div>
@@ -411,21 +404,21 @@
                                 <li>Crear una clase "destacado" con fondo amarillo</li>
                                 <li>Crear un ID "principal" con borde azul</li>
                             </ul>
-
+                            
                             <details class="exercise-solution">
                                 <summary>Ver solución</summary>
                                 <div class="code-block">
-                                    h2 {
-                                    color: green;
-                                    }
+h2 {
+    color: green;
+}
 
-                                    .destacado {
-                                    background: yellow;
-                                    }
+.destacado {
+    background: yellow;
+}
 
-                                    #principal {
-                                    border: 2px solid blue;
-                                    }
+#principal {
+    border: 2px solid blue;
+}
                                 </div>
                             </details>
                         </div>
@@ -434,7 +427,7 @@
                     <div id="box-model">
                         <h3>El Box Model</h3>
                         <p>Cada elemento HTML es una caja. El Box Model define las partes de esa caja:</p>
-
+                        
                         <div class="demo-box">
                             <div class="demo-header">Visualización del Box Model</div>
                             <div class="demo-content">
@@ -457,48 +450,47 @@
                         </div>
 
                         <div class="code-block">
-                            .mi-caja {
-                            width: 200px; /* Ancho del contenido */
-                            padding: 20px; /* Espacio interno */
-                            border: 5px solid black; /* Borde */
-                            margin: 15px; /* Espacio externo */
-                            }
+.mi-caja {
+    width: 200px;       /* Ancho del contenido */
+    padding: 20px;      /* Espacio interno */
+    border: 5px solid black;  /* Borde */
+    margin: 15px;       /* Espacio externo */
+}
                         </div>
 
                         <div class="tip">
-                            La propiedad <code class="code-inline">box-sizing: border-box</code> incluye padding y
-                            border en el width total. Es muy útil y se usa mucho en CSS moderno.
+                            La propiedad <code class="code-inline">box-sizing: border-box</code> incluye padding y border en el width total. Es muy útil y se usa mucho en CSS moderno.
                         </div>
                     </div>
 
                     <div id="colores">
                         <h3>Colores y Tipografías</h3>
-
+                        
                         <h4>Colores en CSS</h4>
                         <div class="code-block">
-                            /* Nombres de colores */
-                            color: red;
+/* Nombres de colores */
+color: red;
 
-                            /* Hexadecimal */
-                            color: #ff0000;
+/* Hexadecimal */
+color: #ff0000;
 
-                            /* RGB */
-                            color: rgb(255, 0, 0);
+/* RGB */
+color: rgb(255, 0, 0);
 
-                            /* HSL */
-                            color: hsl(0, 100%, 50%);
+/* HSL */
+color: hsl(0, 100%, 50%);
 
-                            /* Con transparencia */
-                            color: rgba(255, 0, 0, 0.5);
+/* Con transparencia */
+color: rgba(255, 0, 0, 0.5);
                         </div>
 
                         <h4>Tipografías</h4>
                         <div class="code-block">
-                            font-family: Arial, sans-serif;
-                            font-size: 18px;
-                            font-weight: bold;
-                            line-height: 1.5;
-                            text-align: center;
+font-family: Arial, sans-serif;
+font-size: 18px;
+font-weight: bold;
+line-height: 1.5;
+text-align: center;
                         </div>
 
                         <div class="exercise">
@@ -510,18 +502,18 @@
                                 <li>Fuente Arial de 18px</li>
                                 <li>Texto centrado</li>
                             </ul>
-
+                            
                             <details class="exercise-solution">
                                 <summary>Ver solución</summary>
                                 <div class="code-block">
-                                    .mi-parrafo {
-                                    color: darkblue;
-                                    background: lightgray;
-                                    font-family: Arial, sans-serif;
-                                    font-size: 18px;
-                                    text-align: center;
-                                    padding: 10px;
-                                    }
+.mi-parrafo {
+    color: darkblue;
+    background: lightgray;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
                                 </div>
                             </details>
                         </div>
@@ -530,77 +522,71 @@
 
                 <section id="intermedio" class="section">
                     <h2>Nivel Intermedio</h2>
-
+                    
                     <div id="flexbox">
                         <h3>Flexbox - La revolución del layout</h3>
-                        <p>Flexbox cambió para siempre cómo hacemos layouts en CSS. Es perfecto para alinear elementos y
-                            distribuir espacio.</p>
-
+                        <p>Flexbox cambió para siempre cómo hacemos layouts en CSS. Es perfecto para alinear elementos y distribuir espacio.</p>
+                        
                         <div class="code-block">
-                            .contenedor-flex {
-                            display: flex;
-                            justify-content: center; /* Alineación horizontal */
-                            align-items: center; /* Alineación vertical */
-                            gap: 20px; /* Espacio entre elementos */
-                            }
+.contenedor-flex {
+    display: flex;
+    justify-content: center;    /* Alineación horizontal */
+    align-items: center;        /* Alineación vertical */
+    gap: 20px;                  /* Espacio entre elementos */
+}
                         </div>
 
                         <div class="demo-box">
                             <div class="demo-header">Flexbox en acción</div>
                             <div class="demo-content">
-                                <div
-                                    style="display: flex; justify-content: space-around; align-items: center; height: 100px; background: #f0f0f0; border-radius: 5px;">
-                                    <div style="background: #3b82f6; color: white; padding: 10px; border-radius: 5px;">
-                                        Item 1</div>
-                                    <div style="background: #ef4444; color: white; padding: 10px; border-radius: 5px;">
-                                        Item 2</div>
-                                    <div style="background: #10b981; color: white; padding: 10px; border-radius: 5px;">
-                                        Item 3</div>
+                                <div style="display: flex; justify-content: space-around; align-items: center; height: 100px; background: #f0f0f0; border-radius: 5px;">
+                                    <div style="background: #3b82f6; color: white; padding: 10px; border-radius: 5px;">Item 1</div>
+                                    <div style="background: #ef4444; color: white; padding: 10px; border-radius: 5px;">Item 2</div>
+                                    <div style="background: #10b981; color: white; padding: 10px; border-radius: 5px;">Item 3</div>
                                 </div>
                             </div>
                         </div>
 
                         <h4>Propiedades principales de Flexbox</h4>
                         <div class="code-block">
-                            /* En el contenedor padre */
-                            display: flex;
-                            flex-direction: row | column;
-                            justify-content: flex-start | center | space-between | space-around;
-                            align-items: stretch | center | flex-start | flex-end;
+/* En el contenedor padre */
+display: flex;
+flex-direction: row | column;
+justify-content: flex-start | center | space-between | space-around;
+align-items: stretch | center | flex-start | flex-end;
 
-                            /* En los elementos hijos */
-                            flex: 1; /* Crece para llenar el espacio */
-                            flex-shrink: 0; /* No se encoge */
-                            align-self: center; /* Alineación individual */
+/* En los elementos hijos */
+flex: 1;  /* Crece para llenar el espacio */
+flex-shrink: 0;  /* No se encoge */
+align-self: center;  /* Alineación individual */
                         </div>
 
                         <div class="exercise">
                             <h4>Ejercicio 4: Navbar con Flexbox</h4>
-                            <p>Crea un navbar que tenga el logo a la izquierda y los enlaces de navegación a la derecha
-                                usando Flexbox.</p>
-
+                            <p>Crea un navbar que tenga el logo a la izquierda y los enlaces de navegación a la derecha usando Flexbox.</p>
+                            
                             <details class="exercise-solution">
                                 <summary>Ver solución</summary>
                                 <div class="code-block">
-                                    .navbar {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    padding: 1rem;
-                                    background: #333;
-                                    color: white;
-                                    }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
 
-                                    .logo {
-                                    font-weight: bold;
-                                    font-size: 1.5rem;
-                                    }
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 
-                                    .nav-links {
-                                    display: flex;
-                                    gap: 1rem;
-                                    list-style: none;
-                                    }
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
                                 </div>
                             </details>
                         </div>
@@ -609,91 +595,87 @@
                     <div id="grid">
                         <h3>CSS Grid - Layouts complejos simplificados</h3>
                         <p>CSS Grid es perfecto para layouts bidimensionales (filas y columnas).</p>
-
+                        
                         <div class="code-block">
-                            .grid-container {
-                            display: grid;
-                            grid-template-columns: 1fr 2fr 1fr; /* 3 columnas */
-                            grid-template-rows: auto 1fr auto; /* 3 filas */
-                            gap: 20px;
-                            }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;  /* 3 columnas */
+    grid-template-rows: auto 1fr auto;   /* 3 filas */
+    gap: 20px;
+}
                         </div>
 
                         <div class="demo-box">
                             <div class="demo-header">Grid Layout</div>
                             <div class="demo-content">
-                                <div
-                                    style="display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 10px; height: 150px;">
+                                <div style="display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 10px; height: 150px;">
                                     <div style="background: #f59e0b; padding: 10px; border-radius: 5px;">Sidebar</div>
-                                    <div style="background: #3b82f6; color: white; padding: 10px; border-radius: 5px;">
-                                        Contenido principal</div>
-                                    <div style="background: #ef4444; color: white; padding: 10px; border-radius: 5px;">
-                                        Aside</div>
+                                    <div style="background: #3b82f6; color: white; padding: 10px; border-radius: 5px;">Contenido principal</div>
+                                    <div style="background: #ef4444; color: white; padding: 10px; border-radius: 5px;">Aside</div>
                                 </div>
                             </div>
                         </div>
 
                         <h4>Grid Template Areas</h4>
                         <div class="code-block">
-                            .grid-layout {
-                            display: grid;
-                            grid-template-areas:
-                            "header header header"
-                            "sidebar main aside"
-                            "footer footer footer";
-                            grid-template-columns: 200px 1fr 150px;
-                            }
+.grid-layout {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main aside"
+        "footer footer footer";
+    grid-template-columns: 200px 1fr 150px;
+}
 
-                            .header { grid-area: header; }
-                            .sidebar { grid-area: sidebar; }
-                            .main { grid-area: main; }
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
                         </div>
 
                         <div class="tip">
-                            Grid es genial para layouts de página completa, mientras que Flexbox es mejor para
-                            componentes individuales.
+                            Grid es genial para layouts de página completa, mientras que Flexbox es mejor para componentes individuales.
                         </div>
                     </div>
 
                     <div id="responsive">
                         <h3>Responsive Design</h3>
                         <p>Hacer que tu sitio se vea bien en todos los dispositivos.</p>
-
+                        
                         <div class="code-block">
-                            /* Mobile first approach */
-                            .contenedor {
-                            width: 100%;
-                            padding: 10px;
-                            }
+/* Mobile first approach */
+.contenedor {
+    width: 100%;
+    padding: 10px;
+}
 
-                            /* Tablet */
-                            @media (min-width: 768px) {
-                            .contenedor {
-                            padding: 20px;
-                            }
-                            }
+/* Tablet */
+@media (min-width: 768px) {
+    .contenedor {
+        padding: 20px;
+    }
+}
 
-                            /* Desktop */
-                            @media (min-width: 1024px) {
-                            .contenedor {
-                            max-width: 1200px;
-                            margin: 0 auto;
-                            }
-                            }
+/* Desktop */
+@media (min-width: 1024px) {
+    .contenedor {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
                         </div>
 
                         <h4>Unidades responsivas</h4>
                         <div class="code-block">
-                            /* Unidades relativas */
-                            width: 50vw; /* 50% del viewport width */
-                            height: 100vh; /* 100% del viewport height */
-                            font-size: 2rem; /* Relativo al root font-size */
-                            padding: 2em; /* Relativo al font-size del elemento */
+/* Unidades relativas */
+width: 50vw;        /* 50% del viewport width */
+height: 100vh;      /* 100% del viewport height */
+font-size: 2rem;    /* Relativo al root font-size */
+padding: 2em;       /* Relativo al font-size del elemento */
 
-                            /* Funciones modernas */
-                            width: min(90%, 800px); /* El menor de los dos */
-                            width: max(300px, 50%); /* El mayor de los dos */
-                            width: clamp(300px, 50%, 800px); /* Entre mínimo y máximo */
+/* Funciones modernas */
+width: min(90%, 800px);           /* El menor de los dos */
+width: max(300px, 50%);           /* El mayor de los dos */
+width: clamp(300px, 50%, 800px);  /* Entre mínimo y máximo */
                         </div>
 
                         <div class="exercise">
@@ -704,27 +686,27 @@
                                 <li>2 columnas en tablet</li>
                                 <li>3 columnas en desktop</li>
                             </ul>
-
+                            
                             <details class="exercise-solution">
                                 <summary>Ver solución</summary>
                                 <div class="code-block">
-                                    .responsive-grid {
-                                    display: grid;
-                                    gap: 1rem;
-                                    grid-template-columns: 1fr;
-                                    }
+.responsive-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
 
-                                    @media (min-width: 768px) {
-                                    .responsive-grid {
-                                    grid-template-columns: repeat(2, 1fr);
-                                    }
-                                    }
+@media (min-width: 768px) {
+    .responsive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-                                    @media (min-width: 1024px) {
-                                    .responsive-grid {
-                                    grid-template-columns: repeat(3, 1fr);
-                                    }
-                                    }
+@media (min-width: 1024px) {
+    .responsive-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
                                 </div>
                             </details>
                         </div>
@@ -733,26 +715,26 @@
 
                 <section id="avanzado" class="section">
                     <h2>CSS Avanzado</h2>
-
+                    
                     <div id="animaciones">
                         <h3>Animaciones y Transiciones</h3>
-
+                        
                         <h4>Transiciones</h4>
                         <div class="code-block">
-                            .boton {
-                            background: blue;
-                            color: white;
-                            padding: 10px 20px;
-                            border: none;
-                            border-radius: 5px;
-                            transition: all 0.3s ease;
-                            }
+.boton {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
 
-                            .boton:hover {
-                            background: darkblue;
-                            transform: translateY(-2px);
-                            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-                            }
+.boton:hover {
+    background: darkblue;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
                         </div>
 
                         <div class="demo-box">
@@ -766,8 +748,8 @@
                                     border-radius: 5px; 
                                     transition: all 0.3s ease;
                                     cursor: pointer;
-                                " onmouseover="this.style.background='#1e40af'; this.style.transform='translateY(-2px)'"
-                                    onmouseout="this.style.background='#3b82f6'; this.style.transform='translateY(0)'">
+                                " onmouseover="this.style.background='#1e40af'; this.style.transform='translateY(-2px)'" 
+                                   onmouseout="this.style.background='#3b82f6'; this.style.transform='translateY(0)'">
                                     Hover me!
                                 </button>
                             </div>
@@ -775,52 +757,52 @@
 
                         <h4>Keyframe Animations</h4>
                         <div class="code-block">
-                            @keyframes fadeInUp {
-                            from {
-                            opacity: 0;
-                            transform: translateY(30px);
-                            }
-                            to {
-                            opacity: 1;
-                            transform: translateY(0);
-                            }
-                            }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-                            .elemento-animado {
-                            animation: fadeInUp 0.6s ease-out;
-                            }
+.elemento-animado {
+    animation: fadeInUp 0.6s ease-out;
+}
 
-                            /* Animación infinita */
-                            @keyframes spin {
-                            from { transform: rotate(0deg); }
-                            to { transform: rotate(360deg); }
-                            }
+/* Animación infinita */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
 
-                            .spinner {
-                            animation: spin 1s linear infinite;
-                            }
+.spinner {
+    animation: spin 1s linear infinite;
+}
                         </div>
 
                         <div class="exercise">
                             <h4>Ejercicio 6: Crear un loading spinner</h4>
                             <p>Crea una animación de loading que rote continuamente.</p>
-
+                            
                             <details class="exercise-solution">
                                 <summary>Ver solución</summary>
                                 <div class="code-block">
-                                    @keyframes spin {
-                                    0% { transform: rotate(0deg); }
-                                    100% { transform: rotate(360deg); }
-                                    }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
-                                    .loader {
-                                    border: 4px solid #f3f3f3;
-                                    border-top: 4px solid #3498db;
-                                    border-radius: 50%;
-                                    width: 40px;
-                                    height: 40px;
-                                    animation: spin 2s linear infinite;
-                                    }
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
                                 </div>
                             </details>
                         </div>
@@ -829,130 +811,129 @@
                     <div id="variables">
                         <h3>Variables CSS (Custom Properties)</h3>
                         <p>Las variables CSS nos permiten reutilizar valores y crear temas dinámicos.</p>
-
+                        
                         <div class="code-block">
-                            :root {
-                            --color-primary: #3b82f6;
-                            --color-secondary: #64748b;
-                            --spacing-sm: 0.5rem;
-                            --spacing-md: 1rem;
-                            --spacing-lg: 2rem;
-                            }
+:root {
+    --color-primary: #3b82f6;
+    --color-secondary: #64748b;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+}
 
-                            .card {
-                            background: var(--color-primary);
-                            padding: var(--spacing-md);
-                            margin-bottom: var(--spacing-sm);
-                            }
+.card {
+    background: var(--color-primary);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
 
-                            /* Tema oscuro */
-                            [data-theme="dark"] {
-                            --color-primary: #1e40af;
-                            --color-secondary: #94a3b8;
-                            }
+/* Tema oscuro */
+[data-theme="dark"] {
+    --color-primary: #1e40af;
+    --color-secondary: #94a3b8;
+}
                         </div>
 
                         <div class="tip">
-                            Las variables CSS son perfectas para crear sistemas de design consistentes y temas
-                            cambiables.
+                            Las variables CSS son perfectas para crear sistemas de design consistentes y temas cambiables.
                         </div>
                     </div>
                 </section>
 
                 <section id="moderno" class="section">
                     <h2>CSS Moderno 2025</h2>
-
+                    
                     <h3>Container Queries</h3>
                     <p>Responsive design basado en el contenedor, no en la ventana.</p>
                     <div class="code-block">
-                        .card-container {
-                        container-type: inline-size;
-                        container-name: card;
-                        }
+.card-container {
+    container-type: inline-size;
+    container-name: card;
+}
 
-                        @container card (min-width: 400px) {
-                        .card {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        }
-                        }
+@container card (min-width: 400px) {
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
                     </div>
 
                     <h3>Subgrid</h3>
                     <p>Permite que los elementos hijos hereden la estructura del grid padre.</p>
                     <div class="code-block">
-                        .parent-grid {
-                        display: grid;
-                        grid-template-columns: repeat(3, 1fr);
-                        gap: 1rem;
-                        }
+.parent-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
 
-                        .child-grid {
-                        display: grid;
-                        grid-column: span 2;
-                        grid-template-columns: subgrid;
-                        grid-template-rows: subgrid;
-                        }
+.child-grid {
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
                     </div>
 
                     <h3>CSS Nesting</h3>
                     <p>Ya no necesitas preprocesadores para anidar selectores.</p>
                     <div class="code-block">
-                        .card {
-                        background: white;
-                        padding: 1rem;
-                        border-radius: 8px;
-
-                        & h2 {
-                        color: var(--color-primary);
-                        margin-bottom: 0.5rem;
-                        }
-
-                        & p {
-                        color: var(--color-secondary);
-                        line-height: 1.6;
-                        }
-
-                        &:hover {
-                        transform: translateY(-2px);
-                        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-                        }
-                        }
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    
+    & h2 {
+        color: var(--color-primary);
+        margin-bottom: 0.5rem;
+    }
+    
+    & p {
+        color: var(--color-secondary);
+        line-height: 1.6;
+    }
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+}
                     </div>
 
                     <h3>Logical Properties</h3>
                     <p>Propiedades que se adaptan automáticamente a diferentes idiomas y direcciones de escritura.</p>
                     <div class="code-block">
-                        /* En lugar de margin-left y margin-right */
-                        margin-inline: 1rem;
+/* En lugar de margin-left y margin-right */
+margin-inline: 1rem;
 
-                        /* En lugar de margin-top y margin-bottom */
-                        margin-block: 1rem;
+/* En lugar de margin-top y margin-bottom */
+margin-block: 1rem;
 
-                        /* En lugar de border-left */
-                        border-inline-start: 2px solid blue;
+/* En lugar de border-left */
+border-inline-start: 2px solid blue;
 
-                        /* En lugar de text-align: left */
-                        text-align: start;
+/* En lugar de text-align: left */
+text-align: start;
                     </div>
 
                     <h3>CSS Functions Modernas</h3>
                     <div class="code-block">
-                        /* has() - Selector padre condicional */
-                        .card:has(img) {
-                        display: grid;
-                        grid-template-columns: 1fr 2fr;
-                        }
+/* has() - Selector padre condicional */
+.card:has(img) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 
-                        /* is() - Simplifica selectores múltiples */
-                        :is(h1, h2, h3) {
-                        line-height: 1.2;
-                        }
+/* is() - Simplifica selectores múltiples */
+:is(h1, h2, h3) {
+    line-height: 1.2;
+}
 
-                        /* where() - Como is() pero con especificidad 0 */
-                        :where(ul, ol) li {
-                        margin-bottom: 0.5rem;
-                        }
+/* where() - Como is() pero con especificidad 0 */
+:where(ul, ol) li {
+    margin-bottom: 0.5rem;
+}
                     </div>
 
                     <div class="exercise">
@@ -963,474 +944,476 @@
                             <li>Use logical properties</li>
                             <li>Implemente variables CSS</li>
                         </ul>
-
+                        
                         <details class="exercise-solution">
                             <summary>Ver solución</summary>
                             <div class="code-block">
-                                :root {
-                                --card-bg: white;
-                                --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                                --card-radius: 8px;
-                                --card-padding: 1.5rem;
-                                }
-
-                                .modern-card {
-                                background: var(--card-bg);
-                                padding-block: var(--card-padding);
-                                padding-inline: var(--card-padding);
-                                border-radius: var(--card-radius);
-                                box-shadow: var(--card-shadow);
-                                transition: transform 0.3s ease;
-
-                                & .card-title {
-                                color: var(--color-primary);
-                                margin-block-end: 0.5rem;
-                                }
-
-                                & .card-content {
-                                color: var(--color-secondary);
-                                line-height: 1.6;
-                                }
-
-                                &:hover {
-                                transform: translateY(-4px);
-                                box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-                                }
-                                }
-                            </div>
-                        </details>
-                    </div>
-                </section>
-
-                <section id="proyectos" class="section">
-                    <h2>Proyectos Prácticos</h2>
-
-                    <h3>Proyecto 1: Landing Page Responsiva</h3>
-                    <p>Vamos a crear una landing page completa usando todo lo aprendido.</p>
-
-                    <div class="code-block">
-                        /* Sistema de variables */
-                        :root {
-                        --primary: #2563eb;
-                        --secondary: #64748b;
-                        --accent: #f59e0b;
-                        --bg-light: #f8fafc;
-                        --text-dark: #1e293b;
-                        --spacing: clamp(1rem, 4vw, 2rem);
-                        }
-
-                        /* Reset y base styles */
-                        * {
-                        margin: 0;
-                        padding: 0;
-                        box-sizing: border-box;
-                        }
-
-                        body {
-                        font-family: system-ui, -apple-system, sans-serif;
-                        line-height: 1.6;
-                        color: var(--text-dark);
-                        }
-
-                        /* Header con navegación */
-                        .header {
-                        position: sticky;
-                        top: 0;
-                        background: rgba(255, 255, 255, 0.95);
-                        backdrop-filter: blur(10px);
-                        z-index: 100;
-
-                        & .nav {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 1rem var(--spacing);
-
-                        & .logo {
-                        font-weight: bold;
-                        font-size: 1.5rem;
-                        color: var(--primary);
-                        }
-
-                        & .nav-links {
-                        display: flex;
-                        gap: 2rem;
-                        list-style: none;
-
-                        @media (max-width: 768px) {
-                        display: none; /* Simplificado para el ejemplo */
-                        }
-
-                        & a {
-                        text-decoration: none;
-                        color: var(--text-dark);
-                        transition: color 0.3s;
-
-                        &:hover {
-                        color: var(--primary);
-                        }
-                        }
-                        }
-                        }
-                        }
-
-                        /* Hero section */
-                        .hero {
-                        min-height: 80vh;
-                        display: grid;
-                        place-items: center;
-                        text-align: center;
-                        padding: var(--spacing);
-                        background: linear-gradient(135deg, var(--bg-light), white);
-
-                        & .hero-content {
-                        max-width: 800px;
-
-                        & h1 {
-                        font-size: clamp(2.5rem, 8vw, 4rem);
-                        margin-bottom: 1rem;
-                        background: linear-gradient(45deg, var(--primary), var(--accent));
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        }
-
-                        & p {
-                        font-size: 1.2rem;
-                        color: var(--secondary);
-                        margin-bottom: 2rem;
-                        }
-
-                        & .cta-button {
-                        display: inline-block;
-                        background: var(--primary);
-                        color: white;
-                        padding: 1rem 2rem;
-                        border-radius: 50px;
-                        text-decoration: none;
-                        font-weight: bold;
-                        transition: all 0.3s ease;
-
-                        &:hover {
-                        background: #1e40af;
-                        transform: translateY(-2px);
-                        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
-                        }
-                        }
-                        }
-                        }
-
-                        /* Cards section */
-                        .features {
-                        padding: 4rem var(--spacing);
-
-                        & .features-grid {
-                        display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                        gap: 2rem;
-                        max-width: 1200px;
-                        margin: 0 auto;
-                        }
-
-                        & .feature-card {
-                        background: white;
-                        padding: 2rem;
-                        border-radius: 12px;
-                        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-                        transition: transform 0.3s ease;
-
-                        &:hover {
-                        transform: translateY(-5px);
-                        }
-
-                        & .icon {
-                        width: 60px;
-                        height: 60px;
-                        background: var(--accent);
-                        border-radius: 12px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-bottom: 1rem;
-                        font-size: 2rem;
-                        }
-
-                        & h3 {
-                        margin-bottom: 1rem;
-                        color: var(--primary);
-                        }
-                        }
-                        }
-                    </div>
-
-                    <div class="tip">
-                        Este proyecto combina variables CSS, nesting, grid, flexbox, y responsive design. ¡Es tu
-                        oportunidad de brillar!
-                    </div>
-
-                    <h3>Proyecto 2: Dashboard con CSS Grid</h3>
-                    <div class="code-block">
-                        .dashboard {
-                        display: grid;
-                        grid-template-areas:
-                        "sidebar header header"
-                        "sidebar main aside"
-                        "sidebar footer footer";
-                        grid-template-columns: 250px 1fr 300px;
-                        grid-template-rows: auto 1fr auto;
-                        min-height: 100vh;
-                        gap: 1rem;
-                        padding: 1rem;
-                        }
-
-                        .sidebar {
-                        grid-area: sidebar;
-                        background: var(--primary);
-                        color: white;
-                        padding: 2rem;
-                        border-radius: 12px;
-                        }
-
-                        .header {
-                        grid-area: header;
-                        background: white;
-                        padding: 1rem 2rem;
-                        border-radius: 12px;
-                        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                        }
-
-                        .main {
-                        grid-area: main;
-                        background: white;
-                        padding: 2rem;
-                        border-radius: 12px;
-                        overflow-y: auto;
-                        }
-
-                        .aside {
-                        grid-area: aside;
-                        background: var(--bg-light);
-                        padding: 2rem;
-                        border-radius: 12px;
-                        }
-
-                        .footer {
-                        grid-area: footer;
-                        background: var(--secondary);
-                        color: white;
-                        padding: 1rem 2rem;
-                        border-radius: 12px;
-                        }
-
-                        /* Responsive */
-                        @media (max-width: 1024px) {
-                        .dashboard {
-                        grid-template-areas:
-                        "header header"
-                        "sidebar main"
-                        "footer footer";
-                        grid-template-columns: 200px 1fr;
-                        }
-
-                        .aside {
-                        display: none;
-                        }
-                        }
-
-                        @media (max-width: 768px) {
-                        .dashboard {
-                        grid-template-areas:
-                        "header"
-                        "main"
-                        "footer";
-                        grid-template-columns: 1fr;
-                        }
-
-                        .sidebar {
-                        display: none; /* En una app real, sería un menú hamburguesa */
-                        }
-                        }
-                    </div>
-
-                    <div class="exercise">
-                        <h4>Proyecto Final: Tu Portfolio</h4>
-                        <p>Crea tu propio portfolio usando:</p>
-                        <ul>
-                            <li>Variables CSS para un sistema de colores consistente</li>
-                            <li>Grid o Flexbox para el layout principal</li>
-                            <li>CSS nesting donde sea apropiado</li>
-                            <li>Animaciones sutiles</li>
-                            <li>Diseño completamente responsive</li>
-                            <li>CSS moderno (container queries si es posible)</li>
-                        </ul>
-
-                        <p>Secciones sugeridas:</p>
-                        <ul>
-                            <li>Header con navegación</li>
-                            <li>Hero section con tu presentación</li>
-                            <li>Galería de proyectos</li>
-                            <li>Sección de habilidades</li>
-                            <li>Formulario de contacto</li>
-                            <li>Footer</li>
-                        </ul>
-
-                        <div class="tip">
-                            Este es tu momento de brillar. Combina todo lo que has aprendido y crea algo único que
-                            represente tu estilo.
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <h2>Recursos y Próximos Pasos</h2>
-
-                    <h3>Herramientas Recomendadas</h3>
-                    <ul>
-                        <li><strong>VS Code</strong> - Editor con excelente soporte para CSS</li>
-                        <li><strong>DevTools del navegador</strong> - Indispensable para debugging</li>
-                        <li><strong>Can I Use</strong> - Verifica compatibilidad de propiedades</li>
-                        <li><strong>CSS Validator</strong> - Valida tu código CSS</li>
-                        <li><strong>Figma/Adobe XD</strong> - Para diseñar antes de codificar</li>
-                    </ul>
-
-                    <h3>Metodologías CSS</h3>
-                    <div class="code-block">
-                        /* BEM (Block Element Modifier) */
-                        .card { }
-                        .card__title { }
-                        .card__title--highlighted { }
-
-                        /* CUBE CSS */
-                        .composition { }
-                        .utilities { }
-                        .block { }
-                        .exception { }
-                    </div>
-
-                    <h3>Frameworks y Librerías</h3>
-                    <p>Una vez domines CSS vanilla, puedes explorar:</p>
-                    <ul>
-                        <li><strong>Tailwind CSS</strong> - Utility-first framework</li>
-                        <li><strong>Bootstrap</strong> - Framework de componentes</li>
-                        <li><strong>Styled Components</strong> - CSS-in-JS para React</li>
-                        <li><strong>Sass/SCSS</strong> - Preprocesador CSS</li>
-                    </ul>
-
-                    <h3>Mantente Actualizado</h3>
-                    <p>CSS evoluciona constantemente. Sigue estos recursos:</p>
-                    <ul>
-                        <li>MDN Web Docs</li>
-                        <li>CSS Tricks</li>
-                        <li>Smashing Magazine</li>
-                        <li>Frontend Masters</li>
-                        <li>YouTube: Kevin Powell, Layout Land</li>
-                    </ul>
-
-                    <div class="tip">
-                        La clave del éxito en CSS es la práctica constante. Cada proyecto te enseñará algo nuevo. ¡No
-                        tengas miedo de experimentar!
-                    </div>
-                </section>
-
-                <section class="section">
-                    <h2>Hoja de Trucos CSS</h2>
-
-                    <h3>Selectores Más Usados</h3>
-                    <div class="code-block">
-                        /* Básicos */
-                        element { }
-                        .class { }
-                        #id { }
-
-                        /* Combinadores */
-                        parent child { } /* Descendiente */
-                        parent > child { } /* Hijo directo */
-                        element + sibling { } /* Hermano adyacente */
-                        element ~ sibling { } /* Hermanos generales */
-
-                        /* Pseudo-clases */
-                        :hover, :focus, :active
-                        :first-child, :last-child, :nth-child(n)
-                        :not(selector)
-                        :has(selector)
-
-                        /* Pseudo-elementos */
-                        ::before, ::after
-                        ::first-line, ::first-letter
-                        ::placeholder, ::selection
-                    </div>
-
-                    <h3>Propiedades Esenciales</h3>
-                    <div class="code-block">
-                        /* Layout */
-                        display: block | inline | flex | grid | none;
-                        position: static | relative | absolute | fixed | sticky;
-                        top, right, bottom, left
-                        z-index
-
-                        /* Flexbox */
-                        justify-content: flex-start | center | space-between | space-around;
-                        align-items: stretch | center | flex-start | flex-end;
-                        flex-direction: row | column;
-                        gap
-
-                        /* Grid */
-                        grid-template-columns: repeat(3, 1fr);
-                        grid-template-rows: auto 1fr auto;
-                        grid-area: header;
-                        place-items: center;
-
-                        /* Spacing */
-                        margin, padding
-                        gap (flexbox/grid)
-
-                        /* Typography */
-                        font-family, font-size, font-weight
-                        line-height, letter-spacing
-                        text-align, text-decoration
-                        color
-
-                        /* Visual */
-                        background, background-color, background-image
-                        border, border-radius
-                        box-shadow
-                        opacity, filter
-                        transform
-                    </div>
-
-                    <h3>Funciones Útiles</h3>
-                    <div class="code-block">
-                        /* Cálculos */
-                        calc(100% - 20px)
-                        min(50%, 800px)
-                        max(300px, 50%)
-                        clamp(16px, 4vw, 24px)
-
-                        /* Colores */
-                        hsl(210, 100%, 50%)
-                        rgba(255, 0, 0, 0.5)
-                        color-mix(in srgb, blue, red 30%)
-
-                        /* Transformaciones */
-                        translate(10px, 20px)
-                        rotate(45deg)
-                        scale(1.5)
-                    </div>
-                </section>
-
-                <footer
-                    style="text-align: center; padding: 2rem; background: var(--primary); color: white; margin-top: 3rem;">
-                    <h3>¡Felicitaciones! 🎉</h3>
-                    <p>Has completado esta guía de CSS 2025. Ahora es hora de practicar y crear proyectos increíbles.
-                    </p>
-                    <p style="margin-top: 1rem; opacity: 0.8;">Recuerda: el mejor CSS es el que resuelve problemas
-                        reales de manera elegante y mantenible.</p>
-                </footer>
+:root {
+    --card-bg: white;
+    --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    --card-radius: 8px;
+    --card-padding: 1.5rem;
+}
+
+.modern-card {
+    background: var(--card-bg);
+    padding-block: var(--card-padding);
+    padding-inline: var(--card-padding);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease;
+    
+    & .card-title {
+        color: var(--color-primary);
+        margin-block-end: 0.5rem;
+    }
+    
+    & .card-content {
+        color: var(--color-secondary);
+        line-height: 1.6;
+    }
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+}
+            </div>
+        </details>
+    </div>
+</section>
+
+<section id="proyectos" class="section">
+    <h2>Proyectos Prácticos</h2>
+    
+    <h3>Proyecto 1: Landing Page Responsiva</h3>
+    <p>Vamos a crear una landing page completa usando todo lo aprendido.</p>
+    
+    <div class="code-block">
+/* Sistema de variables */
+:root {
+    --primary: #2563eb;
+    --secondary: #64748b;
+    --accent: #f59e0b;
+    --bg-light: #f8fafc;
+    --text-dark: #1e293b;
+    --spacing: clamp(1rem, 4vw, 2rem);
+}
+
+/* Reset y base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Header con navegación */
+.header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    
+    & .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem var(--spacing);
+        
+        & .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        & .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            
+            @media (max-width: 768px) {
+                display: none; /* Simplificado para el ejemplo */
+            }
+            
+            & a {
+                text-decoration: none;
+                color: var(--text-dark);
+                transition: color 0.3s;
+                
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}
+
+/* Hero section */
+.hero {
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: var(--spacing);
+    background: linear-gradient(135deg, var(--bg-light), white);
+    
+    & .hero-content {
+        max-width: 800px;
+        
+        & h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        & p {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-bottom: 2rem;
+        }
+        
+        & .cta-button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: #1e40af;
+                transform: translateY(-2px);
+                box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+            }
+        }
+    }
+}
+
+/* Cards section */
+.features {
+    padding: 4rem var(--spacing);
+    
+    & .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    & .feature-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-5px);
+        }
+        
+        & .icon {
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        & h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+    }
+}
+    </div>
+
+    <div class="tip">
+        Este proyecto combina variables CSS, nesting, grid, flexbox, y responsive design. ¡Es tu oportunidad de brillar!
+    </div>
+
+    <h3>Proyecto 2: Dashboard con CSS Grid</h3>
+    <div class="code-block">
+.dashboard {
+    display: grid;
+    grid-template-areas: 
+        "sidebar header header"
+        "sidebar main aside"
+        "sidebar footer footer";
+    grid-template-columns: 250px 1fr 300px;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sidebar { 
+    grid-area: sidebar;
+    background: var(--primary);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.header { 
+    grid-area: header;
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.main { 
+    grid-area: main;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    overflow-y: auto;
+}
+
+.aside { 
+    grid-area: aside;
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.footer { 
+    grid-area: footer;
+    background: var(--secondary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .dashboard {
+        grid-template-areas: 
+            "header header"
+            "sidebar main"
+            "footer footer";
+        grid-template-columns: 200px 1fr;
+    }
+    
+    .aside {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        display: none; /* En una app real, sería un menú hamburguesa */
+    }
+}
+    </div>
+
+    <div class="exercise">
+        <h4>Proyecto Final: Tu Portfolio</h4>
+        <p>Crea tu propio portfolio usando:</p>
+        <ul>
+            <li>Variables CSS para un sistema de colores consistente</li>
+            <li>Grid o Flexbox para el layout principal</li>
+            <li>CSS nesting donde sea apropiado</li>
+            <li>Animaciones sutiles</li>
+            <li>Diseño completamente responsive</li>
+            <li>CSS moderno (container queries si es posible)</li>
+        </ul>
+        
+        <p>Secciones sugeridas:</p>
+        <ul>
+            <li>Header con navegación</li>
+            <li>Hero section con tu presentación</li>
+            <li>Galería de proyectos</li>
+            <li>Sección de habilidades</li>
+            <li>Formulario de contacto</li>
+            <li>Footer</li>
+        </ul>
+        
+        <div class="tip">
+            Este es tu momento de brillar. Combina todo lo que has aprendido y crea algo único que represente tu estilo.
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Recursos y Próximos Pasos</h2>
+    
+    <h3>Herramientas Recomendadas</h3>
+    <ul>
+        <li><strong>VS Code</strong> - Editor con excelente soporte para CSS</li>
+        <li><strong>DevTools del navegador</strong> - Indispensable para debugging</li>
+        <li><strong>Can I Use</strong> - Verifica compatibilidad de propiedades</li>
+        <li><strong>CSS Validator</strong> - Valida tu código CSS</li>
+        <li><strong>Figma/Adobe XD</strong> - Para diseñar antes de codificar</li>
+    </ul>
+    
+    <h3>Metodologías CSS</h3>
+    <div class="code-block">
+/* BEM (Block Element Modifier) */
+.card { }
+.card__title { }
+.card__title--highlighted { }
+
+/* CUBE CSS */
+.composition { }
+.utilities { }
+.block { }
+.exception { }
+    </div>
+    
+    <h3>Frameworks y Librerías</h3>
+    <p>Una vez domines CSS vanilla, puedes explorar:</p>
+    <ul>
+        <li><strong>Tailwind CSS</strong> - Utility-first framework</li>
+        <li><strong>Bootstrap</strong> - Framework de componentes</li>
+        <li><strong>Styled Components</strong> - CSS-in-JS para React</li>
+        <li><strong>Sass/SCSS</strong> - Preprocesador CSS</li>
+    </ul>
+    
+    <h3>Mantente Actualizado</h3>
+    <p>CSS evoluciona constantemente. Sigue estos recursos:</p>
+    <ul>
+        <li>MDN Web Docs</li>
+        <li>CSS Tricks</li>
+        <li>Smashing Magazine</li>
+        <li>Frontend Masters</li>
+        <li>YouTube: Kevin Powell, Layout Land</li>
+    </ul>
+    
+    <div class="tip">
+        La clave del éxito en CSS es la práctica constante. Cada proyecto te enseñará algo nuevo. ¡No tengas miedo de experimentar!
+    </div>
+</section>
+
+<section class="section">
+    <h2>Hoja de Trucos CSS</h2>
+    
+    <h3>Selectores Más Usados</h3>
+    <div class="code-block">
+/* Básicos */
+element { }
+.class { }
+#id { }
+
+/* Combinadores */
+parent child { }        /* Descendiente */
+parent > child { }      /* Hijo directo */
+element + sibling { }   /* Hermano adyacente */
+element ~ sibling { }   /* Hermanos generales */
+
+/* Pseudo-clases */
+:hover, :focus, :active
+:first-child, :last-child, :nth-child(n)
+:not(selector)
+:has(selector)
+
+/* Pseudo-elementos */
+::before, ::after
+::first-line, ::first-letter
+::placeholder, ::selection
+    </div>
+    
+    <h3>Propiedades Esenciales</h3>
+    <div class="code-block">
+/* Layout */
+display: block | inline | flex | grid | none;
+position: static | relative | absolute | fixed | sticky;
+top, right, bottom, left
+z-index
+
+/* Flexbox */
+justify-content: flex-start | center | space-between | space-around;
+align-items: stretch | center | flex-start | flex-end;
+flex-direction: row | column;
+gap
+
+/* Grid */
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto 1fr auto;
+grid-area: header;
+place-items: center;
+
+/* Spacing */
+margin, padding
+gap (flexbox/grid)
+
+/* Typography */
+font-family, font-size, font-weight
+line-height, letter-spacing
+text-align, text-decoration
+color
+
+/* Visual */
+background, background-color, background-image
+border, border-radius
+box-shadow
+opacity, filter
+transform
+    </div>
+    
+    <h3>Funciones Útiles</h3>
+    <div class="code-block">
+/* Cálculos */
+calc(100% - 20px)
+min(50%, 800px)
+max(300px, 50%)
+clamp(16px, 4vw, 24px)
+
+/* Colores */
+hsl(210, 100%, 50%)
+rgba(255, 0, 0, 0.5)
+color-mix(in srgb, blue, red 30%)
+
+/* Transformaciones */
+translate(10px, 20px)
+rotate(45deg)
+scale(1.5)
+    </div>
+</section>
+
+<footer style="text-align: center; padding: 2rem; background: var(--primary); color: white; margin-top: 3rem;">
+    <h3>¡Felicitaciones! 🎉</h3>
+    <p>Has completado esta guía de CSS 2025. Ahora es hora de practicar y crear proyectos increíbles.</p>
+    <p style="margin-top: 1rem; opacity: 0.8;">Recuerda: el mejor CSS es el que resuelve problemas reales de manera elegante y mantenible.</p>
+</footer>
             </main>
         </div>
     </div>
 
-    <a href="#" class="download-btn" onclick="downloadHTML()">📥 Descargar Guía</a>
+    <!-- Botón de descarga mejorado -->
+    <div class="download-buttons" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; display: flex; flex-direction: column; gap: 10px;">
+        <a href="#" class="download-btn" onclick="downloadHTML()" title="Descargar como archivo HTML">
+            📄 HTML
+        </a>
+        <a href="#" class="download-btn" onclick="downloadPDF()" title="Generar PDF para imprimir">
+            📑 PDF
+        </a>
+    </div>
 
     <script>
         // Función para descargar el HTML
@@ -1445,6 +1428,53 @@
             a.click();
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
+        }
+
+        // Función para generar PDF (usando la funcionalidad de impresión del navegador)
+        function downloadPDF() {
+            // Crear estilos específicos para impresión
+            const printStyles = `
+                <style media="print">
+                    .download-buttons, .download-btn { display: none !important; }
+                    body { font-size: 12pt; line-height: 1.4; }
+                    .header { break-inside: avoid; }
+                    .section { break-inside: avoid-page; }
+                    .code-block { 
+                        break-inside: avoid; 
+                        font-size: 10pt; 
+                        white-space: pre-wrap;
+                        word-break: break-word;
+                    }
+                    .demo-box { break-inside: avoid; }
+                    .exercise { break-inside: avoid; }
+                    .nav { display: none; }
+                    .sidebar { display: none; }
+                    .main-content { 
+                        grid-template-columns: 1fr; 
+                        max-width: none;
+                    }
+                    @page { 
+                        margin: 2cm; 
+                        @top-center { 
+                            content: "Guía CSS 2025 - Página " counter(page);
+                        }
+                    }
+                </style>
+            `;
+            
+            // Agregar estilos temporalmente
+            const styleElement = document.createElement('div');
+            styleElement.innerHTML = printStyles;
+            document.head.appendChild(styleElement.firstElementChild);
+            
+            // Mostrar diálogo de impresión
+            setTimeout(() => {
+                window.print();
+                // Remover estilos después de imprimir
+                setTimeout(() => {
+                    document.head.removeChild(document.head.lastElementChild);
+                }, 1000);
+            }, 500);
         }
 
         // Navegación suave
@@ -1463,7 +1493,7 @@
 
         // Highlight código al hacer click
         document.querySelectorAll('.code-block').forEach(block => {
-            block.addEventListener('click', function () {
+            block.addEventListener('click', function() {
                 if (window.getSelection) {
                     const selection = window.getSelection();
                     const range = document.createRange();
@@ -1504,5 +1534,4 @@
         console.log('💡 Tip: Abre las DevTools para ver cómo está construida esta página');
     </script>
 </body>
-
 </html>
