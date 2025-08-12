@@ -158,9 +158,9 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 ¿Preguntas? ¿Sugerencias? ¿Solo quieres charlar sobre CSS?
 
-- 📧 Email: tu-email@ejemplo.com
+- 📧 Email: johnjairovargasgonzalez@gmail.com
 - 🐦 Twitter: [@tu-usuario](https://twitter.com/tu-usuario)
-- 💼 LinkedIn: [Tu Nombre](https://linkedin.com/in/tu-perfil)
+- 💼 LinkedIn: [John Jairo Vargas Gonzalez](https://www.linkedin.com/in/john-jairo-vargas-gonz%C3%A1lez-25a790237/)
 
 ---
 
