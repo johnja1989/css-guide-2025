@@ -2,7 +2,7 @@
 
 Una guía interactiva y completa para aprender CSS desde cero hasta un nivel avanzado, actualizada para 2025 con las últimas características y mejores prácticas.
 
-![CSS](https://img.shields.io/badge/CSS-Level-Advanced-blue) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![Responsive](https://img.shields.io/badge/Design-Responsive-green)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![Responsive](https://img.shields.io/badge/Design-Responsive-green)
 
 ## 🚀 Demo en Vivo
 
